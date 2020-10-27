@@ -5,10 +5,10 @@
     <ul>
       <li>
         <a
-          href="https://vuejs.org"
+          href="navigationMenu.html"
           target="_blank"
         >
-          Core Docs
+          导航菜单
         </a>
       </li>
       <li>
