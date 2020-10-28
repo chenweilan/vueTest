@@ -1,39 +1,22 @@
 <template>
   <div class="hello">
+    <img src="../assets/logo.png">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
     <ul>
       <li>
-        <a
-          href="navigationMenu.html"
-          target="_blank"
-        >
-          导航菜单
-        </a>
+        <router-link to="/navigationMenu">导航菜单</router-link>
       </li>
       <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
+        <router-link to="/editTxt">编辑文本栏</router-link>
       </li>
       <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
+        <router-link to="/orderList">订单列表</router-link>
       </li>
       <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
+        <router-link to="/searchPage">搜索页面</router-link>
+      </li>
+      <li>
+        <router-link to="/switchLayout">切换不同布局</router-link>
       </li>
       <br>
       <li>
@@ -45,41 +28,8 @@
         </a>
       </li>
     </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
+    <br>
+    <router-view/>
   </div>
 </template>
 
